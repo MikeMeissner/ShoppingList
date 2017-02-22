@@ -13,7 +13,7 @@ export class ListDetailsPage {
 public list:any;
 lists:FirebaseListObservable<any>; 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, fb: AngularFire) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, fb: AngularFire) {
     this.list = {};
     this.lists = fb.database.list('/lists');
   }

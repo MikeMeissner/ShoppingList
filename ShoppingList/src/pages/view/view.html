@@ -15,4 +15,39 @@
 
 <ion-content padding>
 
+<ion-item>
+<ion-label floating>Name of List</ion-label>
+<ion-input type="text" [(ngModel)]="list.name"></ion-input>
+</ion-item>
+
+<ion-list>
+
+<ion-item>
+<ion-label floating>Item 1</ion-label>
+<ion-input type="text" [(ngModel)]="list.item1"></ion-input>
+</ion-item>
+<ion-item>
+<ion-label floating>Item 2</ion-label>
+<ion-input type="text" [(ngModel)]="list.item2"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-label floating>Item 3</ion-label>
+<ion-input type="text" [(ngModel)]="list.item3"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-label floating>Item 4</ion-label>
+<ion-input type="text" [(ngModel)]="list.item4"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-label floating>Item 5</ion-label>
+<ion-input type="text" [(ngModel)]="list.item5"></ion-input>
+</ion-item>
+
+</ion-list>
+
+<button ion-button navPop color="danger" (click)="deleteList(list)">Delete List</button>
+
 </ion-content>

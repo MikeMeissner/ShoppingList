@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import {AngularFire, FirebaseListObservable} from 'angularfire2';
+
 /*
   Generated class for the View page.
 
@@ -13,10 +15,20 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ViewPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+public list:any;
+lists:FirebaseListObservable<any>; 
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ViewPage');
+  constructor(public navCtrl: NavController, public navParams: NavParams, fb: AngularFire) {
+    this.list = {};
+    this.lists = fb.database.list('/lists');
+    this.list=navParams.get("list");
   }
+
+
+
+  deleteList(list){
+  this.lists.remove(list); 
+
+}
 
 }
