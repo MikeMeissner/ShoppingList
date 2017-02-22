@@ -25,7 +25,7 @@ lists:FirebaseListObservable<any>;
   }
 
 
-
+// Deletes list object
   deleteList(list){
   this.lists.remove(list); 
 
