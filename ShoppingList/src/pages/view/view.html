@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>view</ion-title>
+    <ion-title>View List</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -16,34 +16,38 @@
 <ion-content padding>
 
 <ion-item>
-<ion-label floating>Name of List</ion-label>
+<ion-item>Name of List</ion-item>
 <ion-input type="text" [(ngModel)]="list.name"></ion-input>
 </ion-item>
 
 <ion-list>
-
+ <ion-row>
+  <ion-item>Items</ion-item> 
+  <ion-item>Quantity</ion-item> 
+ </ion-row>
 <ion-item>
-<ion-label floating>Item 1</ion-label>
+
 <ion-input type="text" [(ngModel)]="list.item1"></ion-input>
+<ion-input type="text" [(ngModel)]="list.quantity1"></ion-input>
 </ion-item>
 <ion-item>
-<ion-label floating>Item 2</ion-label>
 <ion-input type="text" [(ngModel)]="list.item2"></ion-input>
+<ion-input type="text" [(ngModel)]="list.quantity2"></ion-input>
 </ion-item>
 
 <ion-item>
-<ion-label floating>Item 3</ion-label>
 <ion-input type="text" [(ngModel)]="list.item3"></ion-input>
+<ion-input type="text" [(ngModel)]="list.quantity3"></ion-input>
 </ion-item>
 
 <ion-item>
-<ion-label floating>Item 4</ion-label>
 <ion-input type="text" [(ngModel)]="list.item4"></ion-input>
+<ion-input type="text" [(ngModel)]="list.quantity4"></ion-input>
 </ion-item>
 
 <ion-item>
-<ion-label floating>Item 5</ion-label>
 <ion-input type="text" [(ngModel)]="list.item5"></ion-input>
+<ion-input type="text" [(ngModel)]="list.quantity5"></ion-input>
 </ion-item>
 
 </ion-list>

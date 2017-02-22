@@ -12,8 +12,7 @@
 <ion-list>
 
 <ion-item *ngFor="let list of lists | async">
-    <ion-label>{{list.name}}</ion-label>
-    <button ion-button color="primary" (click)="viewList(list)" item-right>View</button>
+    <ion-label (click)="viewList(list)">{{list.name}}</ion-label>
   </ion-item>
 </ion-list>
 
