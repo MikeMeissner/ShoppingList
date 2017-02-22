@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ListDetailsPage } from '../listDetails/listDetails';
+import { ViewPage } from '../pages/view/view';
 
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
@@ -21,5 +22,8 @@ addList(list){
     this.navCtrl.push(ListDetailsPage); 
   }
 
+deleteList(list){
+  this.lists.remove(list); 
+}
 
 }

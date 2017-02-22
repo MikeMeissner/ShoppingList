@@ -18,7 +18,7 @@ lists:FirebaseListObservable<any>;
     this.lists = fb.database.list('/lists');
   }
 
-  saveItem(){
+  saveList(){
       this.lists.push(this.list);
     }
 

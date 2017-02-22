@@ -1,26 +1,47 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Add List Item
+      Add Shopping List
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-<ion-list>
 
 <ion-item>
-  <ion-label floating>Item</ion-label>
+  <ion-label floating>Name of List</ion-label>
   <ion-input type="text" [(ngModel)]="list.name"></ion-input>
 </ion-item>
 
+<ion-list>
+
 <ion-item>
-  <ion-label floating>Quanity</ion-label>
-  
+  <ion-label floating>Item 1</ion-label>
+  <ion-input type="text" [(ngModel)]="list.item1"></ion-input>
 </ion-item>
+<ion-item>
+  <ion-label floating>Item 2</ion-label>
+  <ion-input type="text" [(ngModel)]="list.item2"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label floating>Item 3</ion-label>
+  <ion-input type="text" [(ngModel)]="list.item3"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label floating>Item 4</ion-label>
+  <ion-input type="text" [(ngModel)]="list.item4"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label floating>Item 5</ion-label>
+  <ion-input type="text" [(ngModel)]="list.item5"></ion-input>
+</ion-item>
+
 
 </ion-list>
 
- <button ion-button navPop type="submit" (click)="saveItem()">Add Item</button>
+ <button ion-button navPop type="submit" (click)="saveList()">Create List</button>
 
 </ion-content>
