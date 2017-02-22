@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Add List Item
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+
+<ion-item>
+  <ion-label floating>Item</ion-label>
+  <ion-input type="text" [(ngModel)]="list.name"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label floating>Quanity</ion-label>
+  
+</ion-item>
+
+</ion-list>
+
+ <button ion-button navPop type="submit" (click)="saveItem()">Add Item</button>
+
+</ion-content>
